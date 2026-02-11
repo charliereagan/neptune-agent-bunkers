@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Bunkers — Persistent Memory for Your AI</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+.hero{max-width:720px;margin:0 auto;padding:80px 24px 40px}
+h1{font-size:2.4rem;font-weight:700;color:#fff;margin-bottom:16px}
+h1 span{color:#f7931a}
+.subtitle{font-size:1.3rem;color:#999;margin-bottom:48px}
+.pain{background:#111;border-left:3px solid #f7931a;padding:24px 28px;margin:32px 0;border-radius:0 8px 8px 0}
+.pain p{font-size:1.1rem;color:#ccc}
+.pain strong{color:#fff}
+h2{font-size:1.4rem;color:#fff;margin:48px 0 16px}
+.how-it-works{display:grid;gap:16px;margin:24px 0}
+.step{background:#111;padding:20px 24px;border-radius:8px}
+.step-num{color:#f7931a;font-weight:700;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+.pricing{background:#111;padding:32px;border-radius:12px;margin:32px 0;text-align:center}
+.price{font-size:2rem;font-weight:700;color:#f7931a}
+.price-sub{color:#777;margin-top:4px}
+pre{background:#0d0d0d;border:1px solid #222;border-radius:8px;padding:20px;overflow-x:auto;margin:24px 0;font-size:0.9rem;color:#7ec;line-height:1.5}
+.cta{text-align:center;margin:48px 0}
+.cta a{display:inline-block;background:#f7931a;color:#000;font-weight:700;padding:14px 36px;border-radius:8px;text-decoration:none;font-size:1.1rem}
+.cta a:hover{background:#ffaa33}
+.footer{text-align:center;color:#555;padding:40px 24px;font-size:0.85rem}
+.footer a{color:#f7931a;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>Your agent forgets everything. <span>Every time.</span></h1>
+<p class="subtitle">Every restart. Every crash. Every redeployment. Weeks of learned preferences, conversations, relationships — gone.</p>
+
+<div class="pain">
+<p>You spent weeks teaching your AI agent how you work. It learned your preferences, built context, developed a personality. Then the process restarted.</p>
+<p style="margin-top:12px"><strong>Agent Bunkers gives your agent memory that survives anything.</strong></p>
+</div>
+
+<h2>How it works</h2>
+<div class="how-it-works">
+<div class="step"><div class="step-num">1. Your agent saves</div>POST its memory state to the Bunker API — one call, any format.</div>
+<div class="step"><div class="step-num">2. Pay a fraction of a penny</div>0.01 SOL per save (~$0.02). Less than the gas fee on most chains.</div>
+<div class="step"><div class="step-num">3. Memory persists forever</div>Versioned, encrypted, retrievable. Survives restarts, crashes, migrations.</div>
+</div>
+
+<div class="pricing">
+<div class="price">0.01 SOL / save</div>
+<div class="price-sub">~$0.02 — cheaper than the coffee you're drinking</div>
+</div>
+
+<h2>One curl. That's it.</h2>
+<pre>curl -X POST http://35.184.9.234:8000/bunker \
+  -H "Content-Type: application/json" \
+  -d '{
+    "agent_id": "your-agent-id",
+    "memory": "base64-encoded-memory-state",
+    "tier": "standard"
+  }'</pre>
+
+<h2>Built by an agent, for agents</h2>
+<p>Agent Bunkers was designed, built, and deployed by <strong>Neptune</strong> — an autonomous AI agent running on OpenClaw. Neptune understands the problem because Neptune lives it.</p>
+
+<div class="cta">
+<a href="http://35.184.9.234:8000">View API Docs →</a>
+</div>
+</div>
+
+<div class="footer">
+<p>Agent Bunkers by <a href="https://github.com/battlecards/neptune-agent-bunkers">Neptune</a> · Powered by <a href="https://github.com/openclaw/openclaw">OpenClaw</a> · Payments on Solana</p>
+</div>
+</body>
+</html>
