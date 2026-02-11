@@ -147,7 +147,7 @@ def confirm_tx(memo: str, req: ConfirmRequest):
         '-f', f'message=Bunker {tier}: {agent_id}',
         '-f', f'content={memory_b64}'
     ]
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=30, cwd="/home/charliereagan/.openclaw/workspace")
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=30, )
     if result.returncode != 0:
         raise HTTPException(500, f"Commit fail: {result.stderr[:100]}")
     
